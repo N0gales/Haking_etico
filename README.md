@@ -11,10 +11,7 @@ Este repositorio documenta mi recorrido personal por el wargame **Bandit** de Ov
 
 Bandit es un wargame interactivo orientado a principiantes que quieren aprender los fundamentos del acceso remoto, gestión de archivos, permisos de usuario y navegación en sistemas Linux.
 
-Puedes jugarlo desde la terminal:
-
-```bash
-ssh bandit0@bandit.labs.overthewire.org -p 2220
+Puedes jugarlo desde la terminal.
 ```
 
 🔗 Enlace oficial: [https://overthewire.org/wargames/bandit/](https://overthewire.org/wargames/bandit/)
