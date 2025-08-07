@@ -1,0 +1,30 @@
+Nivel 2 - Archivos con espacios en el nombre
+
+Objetivo:  
+Localizar y leer un archivo que contiene espacios en su nombre, lo que requiere cuidado especial al usar comandos en la terminal.
+
+Pasos clave:
+
+1. Conexión SSH  
+   Conéctate igual que en los niveles anteriores:
+
+2. Buscar el archivo con espacios  
+   Recuerda usar `find` para buscar el archivo, encerrando el nombre con comillas para que la terminal entienda que es un solo argumento:
+   find ~ -name "spaces in this filename"
+
+3. Leer el archivo con espacios en el nombre  
+   Para leerlo, también debes usar comillas o escapar los espacios:
+   cat "/ruta/destino/spaces in this filename"
+
+   Alternativamente, puedes usar el caracter de escape `\` para cada espacio:
+   cat /ruta/destino/spaces\ in\ this\ filename
+
+*Alternativas y consejos:
+
+- El shell interpreta el espacio como separador de argumentos, por eso hay que usar comillas o escapes para que reconozca el nombre completo.
+- Puedes usar la tecla Tab para autocompletar nombres de archivo, lo que ayuda a evitar errores.
+- Usa `ls` para ver los nombres tal cual y comprobar espacios.
+
+---
+
+¡Sigue adelante! 

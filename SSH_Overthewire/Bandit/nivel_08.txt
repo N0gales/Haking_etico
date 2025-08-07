@@ -1,0 +1,25 @@
+Nivel 8 - Encuentra la línea única entre duplicados
+
+Objetivo:  
+Explorar un archivo con muchas líneas aparentemente repetidas, y encontrar **la única línea que aparece una sola vez**. La aguja en el pajar. O como el único compi que no pone excusas para no ir al gym.
+
+1. Conexión SSH como en los niveles anteriores.
+
+2. Explorar el entorno  
+   Una vez dentro, verás un archivo llamado `data.txt`.  
+   Este contiene una larga lista de líneas, muchas de las cuales están repetidas. La clave está en encontrar **la que no se repite**.
+
+3. Estrategia  
+   Para esto, usamos un combo clásico de comandos Linux:
+
+   - `cat` para leer el archivo  
+   - `sort` para ordenar todas las líneas alfabéticamente (esto agrupa iguales)  
+   - `uniq -u` para mostrar solo las líneas **únicas**
+
+*Alternativas y consejos:
+- Para contar ocurrencias de cada línea:
+sort /ruta/ejemplo.txt | uniq -c
+- Para ver solo las líneas duplicadas:
+sort /ruta/ejemplo.txt  | uniq -d
+
+¡Sigue practicando y explorando! 

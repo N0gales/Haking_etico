@@ -1,0 +1,35 @@
+Nivel 5 - Archivos con contenido "no imprimible"
+
+Objetivo:  
+Leer un archivo que **no se ve bien con `cat`**, porque contiene caracteres no imprimibles (o directamente ilegibles).
+
+Pasos clave:
+
+1. Conexión SSH como en los niveles anteriores.
+   
+2. Entra al directorio  
+   cd ejemplo
+
+3. Listar los archivos  
+   ls -la
+
+4. Leer el archivo con un comando que soporte binarios  
+   Aquí es donde `cat` ya **no sirve** del todo bien. Toca usar:
+   strings nombre_archivo
+
+   - `strings` escanea un archivo binario o mixto y extrae solo las cadenas de texto legibles.
+
+*Alternativas útiles:
+
+- `file nombre_archivo` → te dice si el archivo es ASCII text, binary, etc.
+- `xxd nombre_archivo` → para ver el archivo en formato hexadecimal (muy hacker vibes, pero opcional).
+
+Consejos:
+
+- Si ves “garabatos” o basura al usar `cat`, ¡es normal!
+- `strings` es clave en forense y análisis de binarios: saca el jugo de los ejecutables, logs corrompidos, y cualquier archivo raruno.
+
+---
+
+Piensa como si te hubieran dejado una nota dentro de un archivo corrupto. ¿La leerías con Word o con lupa y bisturí digital? Pues eso.
+

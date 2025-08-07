@@ -1,0 +1,42 @@
+Nivel 1 - Archivos con nombres especiales
+
+Objetivo:  
+Encontrar y leer un archivo cuyo nombre es un carácter especial (por ejemplo, un guion `-`), lo que puede complicar su manipulación si no usas bien los comandos.
+
+Pasos clave:
+
+1. Conexión SSH  
+   Igual que en el nivel anterior, te dejo los pasos por si aun no te familiarizaste:
+
+- Comando que inicia la conexión Shell: ssh
+- Usuario con el que quieres entrar a la maquina: banditx@
+- La dirección del servidor al que quieres conectarte (Puede ser IP o dominio):bandit.labs.overthewire.org
+- Por ultimo puerto por el que quieres conectar, en este caso por defecto:   -p 2220
+  
+
+2. Buscar el archivo con nombre especial  
+   Usa 'find' para localizar un archivo que se llama literalmente `-`:
+   find ~ -name -
+
+   Nota: El guion `-` puede confundirse con una opción en muchos comandos, a mí me pasó, por eso es importante usar rutas o comillas para referirse a él.
+
+3. Leer el archivo con nombre especial  
+   Para mostrar su contenido, usa:
+   cat /ruta/destino/-
+
+   Alternativamente, si estás en el directorio donde está el archivo:
+   cat ./-
+
+   O usando comillas:
+   cat '/ruta/destino/-'
+
+*Alternativas y consejos:
+
+- Siempre que un archivo tenga un nombre que puede confundirse con opciones (como `-`), usa rutas explícitas, `./` o comillas para evitar que el shell lo interprete mal.
+- Para confirmar dónde estás, usa `pwd` (print working directory).
+- Para listar archivos con detalles en el directorio actual:
+  ls -la
+
+---
+
+¡A seguir explorando!

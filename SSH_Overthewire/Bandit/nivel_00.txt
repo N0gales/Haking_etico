@@ -1,0 +1,43 @@
+Nivel 0 - Introducción y exploración básica SSH
+
+Objetivo:
+Conectarse al sistema remoto vía SSH y localizar un archivo que contiene la contraseña para avanzar al siguiente nivel.
+
+Pasos clave:
+
+1. Conexión SSH  
+   Usa el comando para conectarte al servidor remoto en el puerto indicado:
+  Yo nunca había hecho conexión por ssh y no sabia cual era el formato hasta que me documenté y aprendí que se basa en: 
+
+- Comando que inicia la conexión Shell: ssh
+- Usuario con el que quieres entrar a la maquina: banditx@
+- La dirección del servidor al que quieres conectarte (Puede ser IP o dominio):bandit.labs.overthewire.org
+- Por ultimo puerto por el que quieres conectar, en este caso por defecto:   -p 2220
+
+2. Buscar archivos por nombre  
+   Una vez dentro, puedes buscar un archivo cuyo nombre conozcas usando:
+   find ~ -name readme
+
+   - 'find' busca archivos y directorios.
+   - '~' indica que la búsqueda empieza en tu carpeta home.
+   - '-name readme' filtra archivos que coincidan exactamente con ese nombre.
+
+3. Leer el contenido del archivo  
+   Para ver qué hay dentro del archivo encontrado:
+   cat /home/bandit0/readme
+
+   - 'cat' muestra el contenido de un archivo en la terminal.
+   - Necesitas la ruta completa o relativa al archivo.
+
+*Alternativas y consejos:
+
+- En lugar de 'cat', si el archivo es muy largo, puedes usar 'less' o 'more' para leerlo página a página:
+  less /home/bandit0/readme
+- Si no recuerdas el nombre exacto del archivo, puedes usar 'ls' para listar archivos en un directorio:
+  ls -la ~
+- Experimenta con 'find' para buscar archivos con criterios distintos (por ejemplo, buscando por extensión o patrón de nombre).
+
+---
+
+¡A practicar! La clave está en entender cómo funciona cada comando y explorar con curiosidad.
+

@@ -1,0 +1,22 @@
+Nivel 10 - Decodificación Base64
+
+Objetivo:
+Decodificar un archivo codificado en Base64 para revelar su contenido legible.
+
+---
+
+1. Conexión SSH  
+Conéctate al servidor como en niveles anteriores.
+
+2. Explorar el archivo
+El archivo principal está codificado en Base64
+
+3. Decodificar Base64
+Para transformar el archivo a texto legible, utiliza base64 -d es el comando que decodifica datos codificados en Base64.
+
+*Alternativas y consejos:
+- Puedes guardar la salida decodificada en un archivo para analizarlo mejor.
+- Usa comandos como less para navegar cómodamente por archivos grandes.
+- Entender cómo y cuándo usar herramientas de codificación y decodificación es esencial en análisis forense y hacking.
+
+¡Sigue explorando con curiosidad y sin miedo a experimentar!
