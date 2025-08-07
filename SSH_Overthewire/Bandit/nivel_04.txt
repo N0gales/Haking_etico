@@ -1,0 +1,37 @@
+Nivel 4 - Archivos ocultos con nombre sospechoso
+
+Objetivo:  
+Localizar un archivo oculto que contiene información útil, dentro de un directorio con múltiples archivos… y alguno camuflado.
+
+Pasos clave:
+
+1. Conexión SSH  
+   Conéctate como en el nivel anterior.
+
+2. Entrar en el directorio objetivo  
+   cd ejemplo
+
+3. Ver archivos ocultos  
+   Usa:
+   ls -la
+
+   - Con esto verás **todos** los archivos, incluso los que empiezan por `.` (ocultos).
+   - Observa bien los nombres, porque uno **no es lo que parece**.
+
+4. Leer el archivo correcto  
+   Una vez identificado, usa `cat` para mostrar su contenido.
+
+Comandos útiles:
+
+- `ls -la` → muestra todo, incluidos archivos ocultos.  
+- `file nombre_archivo` → te dice qué tipo de archivo es (texto, binario, etc.).  
+- `cat` → para ver el contenido, si es legible.
+
+Consejos:
+
+- Los nombres raros o poco visibles suelen esconder algo.  
+- No todos los archivos son lo que aparentan… ¡piensa como hacker!
+
+---
+
+¡Aquí empiezan los juegos mentales!

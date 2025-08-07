@@ -1,0 +1,29 @@
+Nivel 12 - Codificación hexadecimal.
+
+Objetivo:
+Leer un archivo que contiene la contraseña… pero no directamente. Está codificada en hexadecimal, así que habrá que decodificarla para avanzar.
+
+---
+
+1. Conexión SSH  
+Conéctate al servidor como en niveles anteriores.
+
+2. Explorar el archivo
+El archivo esta en uno de los directorios.
+Primero, comprueba su contenido con cat.
+Verás que no es un texto legible. Vas a necesitar decodificarlo
+
+3. Decodificar hexadecimal a texto plano
+xxd convierte binarios a hexadecimal y viceversa.
+
+Con -r haces un "reverse": pasas de hex a binario.
+
+Puedes redirigir el resultado a otro archivo para inspeccionarlo mejor: xxd -r ejemplo.txt > decoded_file
+Una vez convertido, revisa el contenido resultante
+
+*Alternativas y consejos:
+- Aprendí que si xxd no estuviera disponible en alguna terminal, puedes usar herramientas como echo con xxd, hexdump, o incluso codificadores online si estuvieras practicando fuera del entorno Bandit.
+- Puedes combinar varios comandos en una sola línea con pipes (|) para agilizar el proceso.
+- A veces el resultado intermedio no es del todo legible: prueba a visualizar con strings o file para ver de qué tipo de archivo se trata.
+
+¡A seguir avanzando!

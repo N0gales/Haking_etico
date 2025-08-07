@@ -1,0 +1,36 @@
+Nivel 3 - Navegación y exploración de directorios
+
+Objetivo:  
+Aprender a moverte entre directorios y listar archivos, incluyendo los ocultos, para encontrar la información que necesitas.
+
+Pasos clave:
+
+1. Conexión SSH  
+   Conéctate como en los niveles anteriores.
+
+2. Listar archivos con detalles  
+   Usar:
+   ls -la
+
+   - `ls` lista los archivos en el directorio actual.  
+   - La opción `-l` muestra detalles como permisos, propietario, tamaño y fecha.  
+   - La opción `-a` incluye archivos ocultos (los que empiezan con `.`).
+
+3. Cambiar de directorio  
+   Para entrar en un subdirectorio, usa:
+   cd nombre_directorio
+
+4. Leer archivo  
+   Una vez dentro, usa:
+   cat nombre_archivo
+
+*Alternativas y consejos:
+
+- Usa `pwd` para saber en qué directorio estás ubicado.  
+- Para volver al directorio anterior:
+  cd ..
+- Para ver el contenido de un archivo largo sin que se pierda en la pantalla:
+  less nombre_archivo
+---
+
+¡A practicar esos comandos y exploración!

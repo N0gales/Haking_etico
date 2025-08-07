@@ -1,0 +1,34 @@
+Nivel 7 - Variables de entorno y cómo manipularlas
+
+Objetivo:  
+Usar un ejecutable que solo se comporta bien si le das el **entorno** adecuado. Como una diva del pop: si no tiene el camerino con 7 botellas de agua Fiji, no canta.
+
+1. Conexión SSH como en los niveles anteriores  
+
+2. Listar lo disponible  
+   ls -l
+
+   Verás un ejecutable llamado `banditx`. Al igual que en el nivel anterior, **no puedes leerlo**, pero **sí puedes ejecutarlo**.
+
+3. Probar a ejecutarlo  
+   ./banditx
+
+   Verás que te dice algo como “¡Nah! No te conozco, no me hables”.  
+   Eso es porque espera que **una variable de entorno específica** esté definida correctamente.
+
+4. Ejecutar con variable de entorno  
+   Puedes definir variables en la misma línea de ejecución. Ejemplo:VAR=valor ./programa
+
+En este caso, el ejecutable solo se comporta bien si le das un valor concreto en una variable determinada. ¡Investiga el nombre de esa variable leyendo el mensaje de error!
+
+Comandos útiles:
+
+- `./nombre` → ejecuta binarios con permisos de ejecución.  
+- `VAR=value ./binary` → pasa una variable de entorno temporalmente.  
+- `strings binary` → puede darte pistas sobre qué variable busca.  
+- `echo $VAR` → para ver si una variable está ya definida.  
+- `env` → muestra todas las variables de entorno actuales.
+
+---
+
+A veces no es lo que dices, sino cómo lo dices… y con qué entorno.  

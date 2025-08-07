@@ -1,0 +1,32 @@
+Nivel 11 - Archivos comprimidos encadenados.
+
+Objetivo:
+Extraer la contraseña oculta dentro de un archivo que ha sido comprimido y encapsulado varias veces con diferentes formatos.
+
+---
+
+1. Conexión SSH  
+Conéctate al servidor como en niveles anteriores.
+
+2. Explorar el archivo
+El archivo esta en uno de los directorios.
+El comando file te dice qué tipo de archivo estás manejando realmente.
+Puede revelar si es un archivo comprimido, una imagen, o incluso basura binaria.
+
+3. Herramientas útiles
+Dependiendo del tipo de compresión detectado, usarás distintas herramientas para ir desenredando el contenido:
+
+    .gz → usa gunzip o zcat
+    .bz2 → usa bunzip2
+    .tar → usa tar -xf
+    .zip → usa unzip
+
+¡La clave aquí es ir quitando capas una a una!
+Cada vez que descomprimas, vuelve a usar file para identificar el siguiente tipo.
+
+*Alternativas y consejos:
+- No borres versiones anteriores del archivo, pero renómbralas si quieres mantener orden: mv data.txt stage1.gz
+- Si te atascas con permisos, revisa que el archivo sea tuyo (ls -l) y que puedas modificarlo.
+- Usa ls -l para confirmar si un nuevo archivo fue creado tras descomprimir.
+
+¡Sigue explorando con curiosidad y sin miedo a experimentar!

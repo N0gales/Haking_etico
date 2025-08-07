@@ -53,9 +53,8 @@ Aprender a investigar, equivocarse, leer `manpages`, buscar pistas y probar coma
 He documentado hasta el **nivel 12** (incluido).  
 Los archivos siguen el formato:
 
-```
 nivel_00.txt → nivel_12.txt
-```
+
 
 ⚠️ *El contenido irá creciendo a medida que avance de nivel.*
 
@@ -63,8 +62,7 @@ nivel_00.txt → nivel_12.txt
 
 ## 📂 Estructura actual
 
-```
-Haking_etico/
+```Haking_etico/
 └── SSH_Overthewire/
     └── Bandit/
         ├── nivel_00.txt
@@ -80,19 +78,17 @@ Haking_etico/
         ├── nivel_10.txt
         ├── nivel_11.txt
         └── nivel_12.txt
-```
+
 
 ---
 
 ## 🤝 ¿Quieres contribuir?
-
 Si estás recorriendo el mismo camino y quieres compartir tus **notas personales** (sin soluciones), ¡eres bienvenido!  
 Este proyecto busca ser una bitácora compartida de aprendizaje ético y colaborativo.
 
 ---
 
 ## 🔐 Disclaimer
-
 Este repositorio es únicamente educativo y no promueve ni contiene prácticas maliciosas.  
 Todos los ejercicios se realizan en un entorno seguro y diseñado para la práctica legal del hacking ético.
 

@@ -1,0 +1,39 @@
+Nivel 6 - Permisos, el portero del sistema
+
+Objetivo:  
+Encontrar una contraseña que **está en un archivo**, pero... no puedes verla directamente. ¿Por qué? Porque **no tienes permisos de lectura**.
+
+Pasos clave:
+
+1. Conexión SSH como en los niveles anteriores.
+
+2. Listar el contenido  
+   ls -l
+
+   - Aquí verás un archivo llamado `bandit7`, pero ¡ojo! No es un archivo de texto cualquiera.
+
+3. Analizar permisos  
+   Con `ls -l`, fíjate en los permisos:  
+   - ¿Tiene “x” (ejecución)?  
+   - ¿Y tú puedes leerlo (`r`)?
+
+   Probablemente no puedes **leer** el contenido… pero sí puedes **ejecutarlo**.  
+   Y ahí está la trampa útil.
+
+4. Ejecutar con argumento  
+   Intenta:
+   `./banditx argumento`
+
+   *Pista:* El programa **espera un input** y **te da una salida**. Prueba pasarle el nombre de usuario del nivel actual como argumento.
+
+Comandos útiles:
+
+- `ls -l` → analiza permisos (rwx) por usuario, grupo, otros.  
+- `file banditx` → confirma que es un ejecutable.  
+- `./nombre` → ejecuta un archivo si tiene permiso `x`.  
+- `chmod` → NO sirve aquí porque no tienes permisos para cambiarlo 😈.
+
+Concepto clave:  
+Este nivel enseña la **diferencia entre leer y ejecutar**. No puedes abrir el archivo para ver qué hace… ¡pero puedes hacer que lo haga por ti! 😏
+
+---

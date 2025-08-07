@@ -1,0 +1,30 @@
+Nivel 9 - Buscar texto visible en un archivo binario
+
+Objetivo:
+Localizar y extraer texto legible dentro de un archivo que contiene datos binarios.
+
+---
+
+1. Conexión SSH  
+Conéctate al servidor como en niveles anteriores.
+
+2. Explorar el archivo
+El archivo principal se llama:
+ejemplo.txt Este archivo contiene datos binarios mezclados con texto legible.
+
+3. Herramienta para extraer texto visible
+Utiliza el comando strings para mostrar todas las cadenas de texto legibles dentro del archivo: strings ejemplo.txt
+
+4. Filtrado con grep
+Para encontrar líneas que contienen un símbolo específico (por ejemplo, =), usa:
+strings ejemplo.txt | grep '='
+
+Esto te ayuda a localizar líneas con claves, variables o datos importantes en formato texto.
+
+*Alternativas y consejos:
+- Strings es útil para examinar archivos binarios y extraer texto sin procesar.
+- Combinar strings con grep permite filtrar por patrones y agilizar la búsqueda.
+- Puedes usar también less para navegar cómodamente: strings data.txt | less
+- Para buscar palabras clave específicas, prueba: strings data.txt | grep "palabra_clave"
+
+¡A seguir explorando!
